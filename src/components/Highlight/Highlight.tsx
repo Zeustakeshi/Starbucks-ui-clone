@@ -16,7 +16,7 @@ const Highlight = ({
         <div
             className={`${
                 isAnimation ? "highlight-animation " : ""
-            } inline-block `}
+            } inline-flex `}
         >
             <span
                 className={`${

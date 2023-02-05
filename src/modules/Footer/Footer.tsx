@@ -22,23 +22,23 @@ const footerInfoData: IFooterInfodata[] = [
             },
             {
                 title: "Our Coffee",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/coffee/",
             },
             {
                 title: "Stories and News",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://stories.starbucks.com/",
             },
             {
                 title: "Starbucks Archive",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://archive.starbucks.com/",
             },
             {
                 title: "Investor Relations",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://investor.starbucks.com/",
             },
             {
                 title: "Customer Service",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://customerservice.starbucks.com/",
             },
         ],
     },
@@ -47,38 +47,44 @@ const footerInfoData: IFooterInfodata[] = [
         items: [
             {
                 title: "Culture and Values",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/careers/working-at-starbucks/culture-and-values/",
             },
             {
                 title: "Inclusion, Diversity, and Equity",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://stories.starbucks.com/stories/inclusion-diversity/",
             },
             {
                 title: "College Achievement Plan",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/careers/working-at-starbucks/education/",
             },
             {
                 title: "Alumni Community",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://alumni.starbucks.com/",
             },
             {
                 title: "U.S. Careers",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/careers/",
             },
             {
                 title: "International Careers",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/careers/international-careers/",
             },
         ],
     },
     {
         title: "Social Impact",
         items: [
-            { title: "People", link: "https://www.starbucks.com/about-us/" },
-            { title: " Planet", link: "https://www.starbucks.com/about-us/" },
+            {
+                title: "People",
+                link: "https://starbucks.com/responsibility/people/",
+            },
+            {
+                title: " Planet",
+                link: "https://starbucks.com/responsibility/planet/",
+            },
             {
                 title: "Environmental and Social Impact Reporting",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/responsibility/reporting-hub/",
             },
         ],
     },
@@ -87,19 +93,19 @@ const footerInfoData: IFooterInfodata[] = [
         items: [
             {
                 title: " Landlord Support Center",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/business/landlord-faq/",
             },
             {
                 title: " Suppliers",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/business/suppliers/",
             },
             {
                 title: " Corporate Gift Card Sales",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbuckscardb2b.com/",
             },
             {
                 title: " Office and Foodservice Coffee",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.nestlecoffeepartnerssl.com/our-brands/we-proudly-serve-starbucks-coffee-program",
             },
         ],
     },
@@ -108,37 +114,49 @@ const footerInfoData: IFooterInfodata[] = [
         items: [
             {
                 title: " Order on the App",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/rewards/mobile-apps/",
             },
             {
                 title: " Order on the Web",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/menu",
             },
-            { title: " Delivery", link: "https://www.starbucks.com/about-us/" },
+            { title: " Delivery", link: "" },
             {
                 title: " Order and Pickup Options",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://www.starbucks.com/ways-to-order/",
             },
             {
                 title: " Explore and Find Coffee for Home",
-                link: "https://www.starbucks.com/about-us/",
+                link: "https://athome.starbucks.com/?utm_source=starbucks.com&utm_medium=referral&utm_campaign=footer",
             },
         ],
     },
 ];
 
 const socialIcons = [
-    { data: facebookJSON, link: "#" },
-    { data: instagramJSON, link: "#" },
-    { data: twitterJSON, link: "#" },
-    { data: pinterestJSON, link: "#" },
+    { data: facebookJSON, link: "https://facebook.com/starbucks" },
+    { data: instagramJSON, link: "https://instagram.com/starbucks" },
+    { data: twitterJSON, link: "https://twitter.com/starbucks/" },
+    { data: pinterestJSON, link: "https://www.pinterest.com/starbucks/" },
 ];
 
 const privacyData: Link[] = [
-    { title: "Privacy Notice", link: "#" },
-    { title: "Terms of Use", link: "#" },
-    { title: "Do Not Share My Personal Information", link: "#" },
-    { title: "CA Supply Chain Act", link: "#" },
+    {
+        title: "Privacy Notice",
+        link: "https://www.starbucks.com/terms/privacy-policy/",
+    },
+    {
+        title: "Terms of Use",
+        link: "https://www.starbucks.com/terms/starbucks-terms-of-use/",
+    },
+    {
+        title: "Do Not Share My Personal Information",
+        link: "https://www.starbucks.com/personal-information",
+    },
+    {
+        title: "CA Supply Chain Act",
+        link: "https://globalassets.starbucks.com/assets/A2A072E3411C4A6ABAEB8D6BCF286F43.pdf",
+    },
     { title: "Cookie Preferences", link: "#" },
 ];
 
