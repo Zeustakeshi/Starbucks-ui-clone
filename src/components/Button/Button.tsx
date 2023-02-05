@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./button.css";
 
 type ButtonType = "primary" | "secondary";
@@ -7,30 +8,29 @@ interface IButton {
     children: React.ReactNode;
     type: ButtonType;
     style?: React.CSSProperties;
+    to?: string;
 }
 
-const Button = ({ type, style, children, ...props }: IButton) => {
-    const customClassName = (type: ButtonType): string => {
-        switch (type) {
-            case "primary":
-                return "px-4 py-2 bg-[#047044] text-white rounded-full uppercase text-sm font-medium hover:opacity-80 transition-all";
-            case "secondary":
-                return "";
-            default:
-                return "";
-        }
-    };
-
+const Button = ({ type, style, children, to, ...props }: IButton) => {
     return (
         <button
             style={style}
-            className={`button-wrapper button-wrapper--${type}`}
+            className={` button-wrapper button-wrapper--${type}`}
             {...props}
         >
             <div className={`button-content  button-content--${type}`}>
-                <span className={`button-text button-text--${type}`}>
-                    {children}
-                </span>
+                {to ? (
+                    <NavLink
+                        to={to}
+                        className={`button-text button-text--${type}`}
+                    >
+                        {children}
+                    </NavLink>
+                ) : (
+                    <span className={`button-text button-text--${type}`}>
+                        {children}
+                    </span>
+                )}
             </div>
         </button>
     );

@@ -4,17 +4,23 @@
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.button-wrapper--primary {
+.button-wrapper {
     position: relative;
     min-width: 135px;
     min-height: 48px;
 }
 
+.button-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: inherit;
+    border-radius: inherit;
+}
+
+/* Primary */
+
 .button-content--primary {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: #047044;
     width: 100%;
     height: 100%;
@@ -26,17 +32,7 @@
 }
 
 .button-text--primary {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: inherit;
-    border-radius: inherit;
+    padding: 10px 20px;
 }
 
 .button-wrapper--primary:hover .button-content--primary {
@@ -51,7 +47,50 @@
     background: #047044;
     color: #fff;
     transition: all 0.4s ease-in-out;
-    transform: translate(-40%, -70%);
+    transform: translate(10%, -30%);
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
         rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+/* secondary */
+.button-wrapper--secondary {
+    overflow: hidden;
+    border-radius: 1000px;
+}
+.button-wrapper--secondary::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -10%;
+    width: 100px;
+    height: 100px;
+    background: #047044;
+    transition: all 0.1s linear;
+    border-radius: 1000px;
+}
+
+.button-content--secondary {
+    color: #047044;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 1000px;
+    transition: inherit;
+    border: 1px solid #047044;
+}
+
+.button-text--secondary {
+    padding: 8px 20px;
+}
+
+.button-wrapper--secondary:hover .button-content--secondary {
+    color: #fff;
+}
+
+.button-wrapper--secondary:hover::after {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    top: -20%;
+    z-index: -1;
+    width: 120%;
 }
