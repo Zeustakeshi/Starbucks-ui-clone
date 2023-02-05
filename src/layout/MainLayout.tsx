@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import MoveToTopButton from "../components/Button/MoveToTopButton";
 import Footer from "../modules/Footer/Footer";
 import Header from "../modules/Header/Header";
 import SocialMedia from "../modules/SocialMedia/SocialMedia";
@@ -26,6 +27,7 @@ const MainLayout = ({ children }: IMainLayout) => {
             {children}
             <Footer></Footer>
             <SocialMedia></SocialMedia>
+            <MoveToTopButton></MoveToTopButton>
         </div>
     );
 };

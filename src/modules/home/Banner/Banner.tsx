@@ -18,7 +18,11 @@ const Banner = () => {
                             coffee is rivaled only by our love of sharing it.
                         </p>
                     </div>
-                    <Button type="primary" style={{ marginTop: 30 }}>
+                    <Button
+                        type="primary"
+                        to="/about-us"
+                        style={{ marginTop: 30 }}
+                    >
                         Learn More
                     </Button>
                 </div>

@@ -1,5 +1,4 @@
 /* BUTTON */
-
 .button-wrapper {
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -93,4 +92,19 @@
     top: -20%;
     z-index: -1;
     width: 120%;
+}
+
+/* Buton Move to top */
+#move-top {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    position: fixed;
+    bottom: 80px;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }

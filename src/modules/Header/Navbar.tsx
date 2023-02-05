@@ -37,12 +37,15 @@ const NavItem = ({ link, children }: INavItem) => {
 
 const FindStore = () => {
     return (
-        <div className="flex justify-center items-center cursor-pointer">
-            <div className="w-[50px] h-[50px] ">
+        <NavLink
+            to="https://www.starbucks.com/store-locator"
+            className="flex justify-center items-center cursor-pointer"
+        >
+            <div className="block w-[50px] h-[50px] ">
                 <Lottie animationData={locationJSON} />
             </div>
             <p className="text-[18px] font-medium">Find a store</p>
-        </div>
+        </NavLink>
     );
 };
 
