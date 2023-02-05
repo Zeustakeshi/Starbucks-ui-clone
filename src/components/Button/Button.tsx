@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./button.css";
 
-type ButtonType = "primary" | "secondary";
+type ButtonType = "primary" | "secondary" | "third";
 
 interface IButton {
     children: React.ReactNode;

@@ -94,6 +94,57 @@
     width: 120%;
 }
 
+/* Third */
+.button-wrapper--third {
+    overflow: hidden;
+    border-radius: 1000px;
+    background: #047044;
+    z-index: 1;
+}
+.button-wrapper--third::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -100%;
+    width: 00%;
+    height: 200%;
+    background: #fff;
+    transition: all 0.5s linear;
+    border-radius: 1000px;
+    z-index: 2;
+}
+
+.button-content--third {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 1000px;
+    transition: inherit;
+    border: 1px solid #047044;
+}
+
+.button-text--third {
+    padding: 8px 20px;
+}
+
+.button-wrapper--third:hover .button-content--third {
+    color: #047044;
+}
+
+.button-wrapper--third:hover::after {
+    transition: all 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+    width: 200%;
+}
+
+.button-wrapper--third:hover {
+    background: #fff;
+}
+
 /* Buton Move to top */
 #move-top {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

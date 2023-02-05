@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Menu from "./pages/Menu";
 import WhatNew from "./pages/WhatNew";
 import Contact from "./pages/Contact";
+import Notfound from "./pages/Notfound";
 function App() {
     return (
         <div className="w-full flex justify-center items-center flex-col">
@@ -13,6 +14,7 @@ function App() {
                 <Route path="/what-new" element={<WhatNew />} />
                 <Route path="/about-us" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<Notfound />} />
             </Routes>
         </div>
     );

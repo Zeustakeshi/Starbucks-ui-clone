@@ -7,10 +7,10 @@ import "./gallery.css";
 type HoverDirection = "left" | "right" | "none";
 
 const Gallery = () => {
-    const galleryRef = useRef<HTMLUListElement>(null);
     const [hoverDirection, setHoverDirection] =
         useState<HoverDirection>("none");
 
+    const galleryRef = useRef<HTMLUListElement>(null);
     useEffect(() => {
         const handleMousemove = (e: MouseEvent) => {
             if (galleryRef.current) {
