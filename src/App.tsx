@@ -1,18 +1,19 @@
-import { useState } from "react";
-import Banner from "./components/Layout/Banner";
-import Footer from "./components/Layout/Footer";
-import Gallery from "./components/Layout/Gallery";
-import Header from "./components/Layout/Header";
-import SocialMedia from "./components/Layout/SocialMedia";
-
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
+import About from "./pages/About";
+import Menu from "./pages/Menu";
+import WhatNew from "./pages/WhatNew";
+import Contact from "./pages/Contact";
 function App() {
     return (
         <div className="w-full flex justify-center items-center flex-col">
-            <Header></Header>
-            <Banner></Banner>
-            <Gallery></Gallery>
-            <Footer></Footer>
-            <SocialMedia></SocialMedia>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/menu" element={<Menu />} />
+                <Route path="/what-new" element={<WhatNew />} />
+                <Route path="/about-us" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
         </div>
     );
 }

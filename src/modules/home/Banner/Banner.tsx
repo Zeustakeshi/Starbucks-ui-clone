@@ -1,8 +1,7 @@
 import React from "react";
-import Button from "../Button";
-import mainCoffee from "../../assets/Main Coffee.png";
-import Highlight from "../Highlight";
-import CanvasImagePixels from "../Canvas/CanvasImagePixels";
+import Button from "../../../components/Button";
+import Highlight from "../../../components/Highlight";
+import mainCoffee from "../../../assets/Main Coffee.png";
 
 const Banner = () => {
     return (

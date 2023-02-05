@@ -1,8 +1,8 @@
 import React from "react";
 import Lottie from "lottie-react";
-import beeJSON from "../assets/Bee.json";
+import beeJSON from "../../assets/Bee.json";
 
-import logo from "../assets/logo.svg";
+import logo from "../../assets/logo.svg";
 const Logo = () => {
     return (
         <div className="logo-wrapper w-[96px] h-[97px] ">
