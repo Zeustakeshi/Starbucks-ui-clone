@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../../../components/Button";
-import Highlight from "../../../components/Highlight";
+import Button from "../../../components/Button/Button";
+import Highlight from "../../../components/Highlight/Highlight";
 import mainCoffee from "../../../assets/Main Coffee.png";
 
 const Banner = () => {

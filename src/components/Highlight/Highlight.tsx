@@ -1,4 +1,5 @@
 import React from "react";
+import "./highlight.css";
 
 interface IHightLight {
     children: React.ReactNode;

@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import coffee1 from "../../../assets/Coffee_01.png";
 import coffee2 from "../../../assets/Coffee_02.png";
 import coffee3 from "../../../assets/Coffee_03.png";
+import "./gallery.css";
 
 type HoverDirection = "left" | "right" | "none";
 

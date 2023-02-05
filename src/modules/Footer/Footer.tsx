@@ -5,59 +5,124 @@ import instagramJSON from "../../assets/instagram.json";
 import pinterestJSON from "../../assets/pinterest.json";
 import twitterJSON from "../../assets/twitter.json";
 
+type Link = { title: string; link: string };
+
 interface IFooterInfodata {
     title: string;
-    items: string[];
+    items: Link[];
 }
 
 const footerInfoData: IFooterInfodata[] = [
     {
         title: "About Us",
         items: [
-            "Our Company",
-            "Our Coffee",
-            "Stories and News",
-            "Starbucks Archive",
-            "Investor Relations",
-            "Customer Service",
+            {
+                title: "Our Company",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "Our Coffee",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "Stories and News",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "Starbucks Archive",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "Investor Relations",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "Customer Service",
+                link: "https://www.starbucks.com/about-us/",
+            },
         ],
     },
     {
         title: "Careers",
         items: [
-            "Culture and Values",
-            "Inclusion, Diversity, and Equity",
-            "College Achievement Plan",
-            "Alumni Community",
-            "U.S. Careers",
-            "International Careers",
+            {
+                title: "Culture and Values",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "Inclusion, Diversity, and Equity",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "College Achievement Plan",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "Alumni Community",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "U.S. Careers",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: "International Careers",
+                link: "https://www.starbucks.com/about-us/",
+            },
         ],
     },
     {
         title: "Social Impact",
         items: [
-            "People",
-            " Planet",
-            "Environmental and Social Impact Reporting",
+            { title: "People", link: "https://www.starbucks.com/about-us/" },
+            { title: " Planet", link: "https://www.starbucks.com/about-us/" },
+            {
+                title: "Environmental and Social Impact Reporting",
+                link: "https://www.starbucks.com/about-us/",
+            },
         ],
     },
     {
         title: "For Business Partners",
         items: [
-            " Landlord Support Center",
-            " Suppliers",
-            " Corporate Gift Card Sales",
-            " Office and Foodservice Coffee",
+            {
+                title: " Landlord Support Center",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: " Suppliers",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: " Corporate Gift Card Sales",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: " Office and Foodservice Coffee",
+                link: "https://www.starbucks.com/about-us/",
+            },
         ],
     },
     {
         title: "Order and Pickup",
         items: [
-            " Order on the App",
-            " Order on the Web",
-            " Delivery",
-            " Order and Pickup Options",
-            " Explore and Find Coffee for Home",
+            {
+                title: " Order on the App",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: " Order on the Web",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            { title: " Delivery", link: "https://www.starbucks.com/about-us/" },
+            {
+                title: " Order and Pickup Options",
+                link: "https://www.starbucks.com/about-us/",
+            },
+            {
+                title: " Explore and Find Coffee for Home",
+                link: "https://www.starbucks.com/about-us/",
+            },
         ],
     },
 ];
@@ -69,7 +134,7 @@ const socialIcons = [
     { data: pinterestJSON, link: "#" },
 ];
 
-const privacyData = [
+const privacyData: Link[] = [
     { title: "Privacy Notice", link: "#" },
     { title: "Terms of Use", link: "#" },
     { title: "Do Not Share My Personal Information", link: "#" },
@@ -108,13 +173,13 @@ const FooterInfoList = ({ info }: { info: IFooterInfodata }) => {
         <div className="flex-col">
             <p className="text-lg font-medium mb-8">{title}</p>
             <ul className="mt-5">
-                {items.map((item: string, index) => {
+                {items.map((item: Link, index) => {
                     return (
                         <li
                             key={index}
                             className="mt-8 first:mt-0 text-sm text-slate-600"
                         >
-                            <a href="">{item}</a>
+                            <a href={item.link}>{item.title}</a>
                         </li>
                     );
                 })}
