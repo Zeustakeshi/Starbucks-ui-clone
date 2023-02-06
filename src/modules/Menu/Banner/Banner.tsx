@@ -10,7 +10,7 @@ import "./banner.css";
 
 const Banner = () => {
     return (
-        <div className="mt-10 flex justify-between items-center gap-10">
+        <div className="app-container mt-10 flex justify-center items-center gap-10">
             <div className="flex flex-col justify-center items-start gap-6">
                 <h2 className="text-5xl text-[#434343]  leading-relaxed">
                     <p>
@@ -134,7 +134,13 @@ const BannerRating = ({
     children: React.ReactNode;
     id: number;
 }) => {
-    return <div className={`rating rating-${id}`}>{children}</div>;
+    return (
+        <div className={`banner-rating-wrapper banner-rating-wrapper-${id}`}>
+            <div className={`banner-rating banner-rating-${id}`}>
+                {children}
+            </div>
+        </div>
+    );
 };
 
 export default Banner;

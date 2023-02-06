@@ -35,6 +35,7 @@
     transform: translate(-50%, -50%);
     width: 90%;
     height: 90%;
+    animation: header-bee alternate 1.3s infinite linear;
 }
 
 .logo-wrapper:hover .logo-content {
@@ -120,4 +121,14 @@
     padding: 12px;
     transform: translateY(-12px) translateX(20px);
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* animation */
+@keyframes header-bee {
+    0% {
+        transform: translate(-50%, calc(-50% - 5px));
+    }
+    100% {
+        transform: translate(-50%, calc(-50% + 5px));
+    }
 }

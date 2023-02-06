@@ -17,7 +17,7 @@ const MainLayout = ({ children }: IMainLayout) => {
             name
                 ? `${
                       name.charAt(0).toUpperCase() + name.slice(1)
-                  }: Starbucks Coffee`
+                  } - Starbucks Coffee`
                 : "Starbucks Coffee"
         }`;
     }, []);
